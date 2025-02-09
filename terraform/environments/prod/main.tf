@@ -14,7 +14,7 @@ terraform {
 #------------------------------------------------------------------------------
 
 module "snowflake_warehouse" {
-  source             = "../../modules/snowflake"
+  source             = "../../modules/warehouse"
   project            = var.project
   environment        = var.environment
   
