@@ -63,3 +63,9 @@ variable "snowflake_organization_name" {
   description = "Snowflake organization name"
   type        = string
 }
+
+variable "dlt_loader_password" {
+  description = "DLT loader password"
+  type        = string
+  sensitive   = true
+}

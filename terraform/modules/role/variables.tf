@@ -35,3 +35,9 @@ variable "database" {
   description = "Database name"
   type        = string
 }
+
+variable "dlt_loader_password" {
+  description = "DLT loader password"
+  type        = string
+  sensitive   = true
+}

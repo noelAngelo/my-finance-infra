@@ -43,4 +43,5 @@ module "snowflake_role" {
   snowflake_organization_name = var.snowflake_organization_name
 
   database = module.snowflake_warehouse.finance_database_name
+  dlt_loader_password = var.dlt_loader_password
 }
