@@ -9,11 +9,6 @@ variable "project" {
   type        = string
 }
 
-variable "snowflake_warehouse_name" {
-  description = "The name of the Snowflake warehouse"
-  type        = string
-}
-
 variable "snowflake_account" {
   description = "The Snowflake account identifier"
   type        = string
@@ -57,4 +52,14 @@ variable "snowflake_password" {
   description = "Snowflake password for authentication"
   type        = string
   sensitive   = true
+}
+
+variable "snowflake_role" {
+  description = "Snowflake role"
+  type        = string
+}
+
+variable "snowflake_organization_name" {
+  description = "Snowflake organization name"
+  type        = string
 }
