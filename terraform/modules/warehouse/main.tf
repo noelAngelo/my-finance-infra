@@ -9,7 +9,7 @@ resource "snowflake_warehouse" "this" {
 resource "snowflake_database" "analytics" {
   name                        = replace(upper("${var.project}-${var.environment}-ANALYTICS"), "-", "_")
   comment                     = "Personal finance analytics database"
-  data_retention_time_in_days = 90
+  data_retention_time_in_days = 1
 }
 
 # Create RAW schema for DLT loading
