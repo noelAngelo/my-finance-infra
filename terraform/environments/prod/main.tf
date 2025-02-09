@@ -1,3 +1,14 @@
+terraform { 
+  cloud { 
+    
+    organization = "noelzy-org" 
+
+    workspaces { 
+      name = "my-finance-infra" 
+    } 
+  } 
+}
+
 #------------------------------------------------------------------------------
 # Create Snowflake Warehouse
 #------------------------------------------------------------------------------
